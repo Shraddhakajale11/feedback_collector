@@ -1,43 +1,43 @@
 # feedback_collector
-💬 What It Does
-The Feedback Collector is a small website where people can give their feedback by filling out a form. After submitting, their feedback is saved, and they see a thank you message.
+
+💬 What It Does 
+             The Feedback Collector is a small website where people can give their feedback by filling out a form. After submitting, their feedback is saved, and they see a thank you message.
 
 ⚙️ How It Works
-      
-      ✅ User visits the page (index.html)
-      
-      ✍️ User fills in their name, email, and message
-      
-      📩 Clicks Submit
-      
-      🖥️ The form sends the data to a PHP script (submit_feedback.php)
-      
-      🗄️ The script saves the feedback into a MySQL database
-      
-      🎉 User is redirected to a thank you page
-
+              ✅ User visits the page (index.html)
+              
+              ✍️ User fills in their name, email, and message
+              
+              📩 Clicks Submit
+              
+              🖥️ The form sends the data to a PHP script (submit_feedback.php)
+              
+              🗄️ The script saves the feedback into a MySQL database
+  
+              🎉 User is redirected to a thank you page
 
 🔁 File Flow Diagram
+                             [ User ]
+                               │
+                               ▼
+                      Opens ➜ index.html   ←–––––––––––––––––––––––––
+                               │                                      │
+                               ▼                                      │
+                     Fills Form (Name, Email, Message)               │
+                               │                                      │
+                               ▼                                      │
+                      Submits Form ➜ submit_feedback.php             │
+                               │                                      │
+                               ▼                                      │
+                    Uses ➜ db.php to connect to MySQL                │
+                               │                                      │
+                               ▼                                      │
+                    Saves feedback into ➜ feedback table (mysql.sql) │
+                               │                                      │
+                               ▼                                      │
+                    Redirects to ➜ thankyou.html   ←––––––––––––––––––
 
-                                 [ User ]
-                                   │
-                                   ▼
-                          Opens ➜ index.html   ←–––––––––––––––––––––––––
-                                   │                                      │
-                                   ▼                                      │
-                         Fills Form (Name, Email, Message)               │
-                                   │                                      │
-                                   ▼                                      │
-                          Submits Form ➜ submit_feedback.php             │
-                                   │                                      │
-                                   ▼                                      │
-                        Uses ➜ db.php to connect to MySQL                │
-                                   │                                      │
-                                   ▼                                      │
-                        Saves feedback into ➜ feedback table (mysql.sql) │
-                                   │                                      │
-                                   ▼                                      │
-                        Redirects to ➜ thankyou.html   ←––––––––––––––––––
+
 
 
 📁 How Each File Works
