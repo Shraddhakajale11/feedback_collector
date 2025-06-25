@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Feedback Form</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+  <!-- Message placeholder -->
+  <div id="feedback-message"></div>
+
+  <div class="form-box">
+    <h2>Give Us Your Feedback</h2>
+
+    <!-- Corrected form -->
+    <form id="feedbackForm" method="POST" action="submit_feedback.php">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Feedback" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const status = params.get('status');
+
+  const feedbackForm = document.getElementById('feedbackForm');
+  const feedbackMessage = document.getElementById('feedback-message');
+
+  if (status === 'success') {
+    feedbackForm.style.display = 'none'; // Hide the form
+    feedbackMessage.innerHTML = `
+      <p style="background-color: #d4edda; color: #155724; padding: 10px; border-radius: 5px;">
+        Feedback submitted successfully!
+      </p>`;
+  } else if (status === 'error') {
+    feedbackMessage.innerHTML = `
+      <p style="background-color: #f8d7da; color: #721c24; padding: 10px; border-radius: 5px;">
+        There was an error submitting your feedback. Please try again.
+      </p>`;
+  }
+</script>
+
+</body>
+</html>
