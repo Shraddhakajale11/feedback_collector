@@ -17,13 +17,13 @@
               🎉 User is redirected to a thank you page
 
 🔁 File Flow Diagram
-                             [ User ]
+                            [ User ]
                                │
                                ▼
                       Opens ➜ index.html   ←–––––––––––––––––––––––––
                                │                                      │
                                ▼                                      │
-                     Fills Form (Name, Email, Message)               │
+                     Fills Form (Name, Email, Message)                │
                                │                                      │
                                ▼                                      │
                       Submits Form ➜ submit_feedback.php             │
