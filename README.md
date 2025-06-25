@@ -16,28 +16,6 @@
   
               🎉 User is redirected to a thank you page
 
-🔁 File Flow Diagram
-                            [ User ]
-                               │
-                               ▼
-                      Opens ➜ index.html   ←–––––––––––––––––––––––––
-                               │                                      │
-                               ▼                                      │
-                     Fills Form (Name, Email, Message)                │
-                               │                                      │
-                               ▼                                      │
-                      Submits Form ➜ submit_feedback.php             │
-                               │                                      │
-                               ▼                                      │
-                    Uses ➜ db.php to connect to MySQL                │
-                               │                                      │
-                               ▼                                      │
-                    Saves feedback into ➜ feedback table (mysql.sql) │
-                               │                                      │
-                               ▼                                      │
-                    Redirects to ➜ thankyou.html   ←––––––––––––––––––
-
-
 
 
 📁 How Each File Works
