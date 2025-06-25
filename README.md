@@ -3,17 +3,18 @@
 The Feedback Collector is a small website where people can give their feedback by filling out a form. After submitting, their feedback is saved, and they see a thank you message.
 
 ⚙️ How It Works
-✅ User visits the page (index.html)
-
-✍️ User fills in their name, email, and message
-
-📩 Clicks Submit
-
-🖥️ The form sends the data to a PHP script (submit_feedback.php)
-
-🗄️ The script saves the feedback into a MySQL database
-
-🎉 User is redirected to a thank you page
+      
+      ✅ User visits the page (index.html)
+      
+      ✍️ User fills in their name, email, and message
+      
+      📩 Clicks Submit
+      
+      🖥️ The form sends the data to a PHP script (submit_feedback.php)
+      
+      🗄️ The script saves the feedback into a MySQL database
+      
+      🎉 User is redirected to a thank you page
 
 
 🔁 File Flow Diagram
