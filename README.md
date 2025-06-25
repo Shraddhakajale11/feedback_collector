@@ -109,4 +109,11 @@
       o	Stylish gradient background
       o	Smooth fade-in animation
       🎉 Standalone page to appreciate user submission
+    
+* output:
+  
+    ![feedback](https://github.com/user-attachments/assets/90009bee-3e71-4ab7-afd8-6a7414bc13ce)
+
+    ![feedback1](https://github.com/user-attachments/assets/593f84c2-c2cc-4964-9829-83066a5732b9)
+
 
